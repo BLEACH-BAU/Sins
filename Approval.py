@@ -135,7 +135,7 @@ import os,httpx
 sexkey = "RIJAN~("+str(os.getuid())+"=(CYBER)="+str(os.getuid())+")~PRO"
 def approval():
     sexkey = "RIJAN~("+str(os.getuid())+"=(CYBER)="+str(os.getuid())+")~PRO"
-    ress=httpx.get("https://github.com/BLEACH-BAU/RIJANv1/blob/main/PRO-CONTROL").text
+    ress=httpx.get("https://github.com/BLEACH-BAU/RIJANv1/blob/main/Approval.txt").text
     if sexkey in ress:
         menu()
     else:
